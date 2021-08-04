@@ -1,0 +1,181 @@
+../<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>divenire-preinscripcion</title>
+    <meta name="descripcion" content="estudia en divenire, la mejor escuela de musica en argentina, incribite aqui" />
+    <meta name="keywords" content="escuela,guitarra,teclado,bateria,canto,musica"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo"> Divenire </a>
+        <nav class="header__menu">
+            <a href="" class="header__menu-sm">
+                <span class="iconify" data-icon="mdi:microsoft-xbox-controller-menu" data-inline="false"></span>
+            </a>
+            <ul class="header__menu-md">
+                <li class="header__menu-link"><a href="../index.html">inicio</a></li>
+                <li class="header__menu-link">
+                    <a href="quienessomos.html">quienes somos</a>
+                </li>
+                <li class="header__menu-link">
+                    <a href="academia.html">academia</a>
+                </li>
+                <li class="header__menu-link">
+                    <a class="header__menu-link--active" href="preinscripcion.html">pre-inscripcion</a>
+                </li>
+                <li class="header__menu-link">
+                    <a href="contacto.html">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="titulo-h1">
+            <h1 class="titulo">Pre-inscripcion</h1>
+        </section>
+        <section class="contenedor-p">
+            <div class="contenedor-p__hijo">
+                <form class="contenedor-p__forms" action="#" method="POST">
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="firstname">nombre:</label>
+                        <input class="contenedor-p__forms-imput" type="text" name="firstname" id="firstname" required
+                            pattern="[a-zA-Z]+" />
+                    </div>
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="lastname">apellido:</label>
+                        <input class="contenedor-p__forms-imput" type="text" name="lastname" id="lastname" required
+                            pattern="[a-zA-Z]+" />
+                    </div>
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="age">fecha de nacimiento</label>
+                        <input class="contenedor-p__forms-imput" type="date" name="age" id="age" required />
+                    </div>
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="phonenumber">celular:</label>
+                        <input class="contenedor-p__forms-imput" type="cel" name="phonenumber " id="phonenumber"
+                            required pattern"="[0-9]+" />
+                    </div>
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="email">email:</label>
+                        <input class="contenedor-p__forms-imput" type="email" name="e-mail" id="email" required />
+                    </div>
+                    <div class="">
+                        <h5>seleccionar carrera:</h5>
+                    </div>
+                    <div>
+                        <input class="contenedor-p__forms-imput" type="checkbox" name="curso" id="guitarra"
+                            value="guitarra" />
+                        <label class="contenedor-p__forms-imput" for="guitarra">guitarra</label>
+                    </div>
+                    <div>
+                        <input class="contenedor-p__forms-imput" type="checkbox" name="curso" id="teclado"
+                            value="teclado" />
+                        <label class="contenedor-p__forms-imput" for="teclado">teclado</label>
+                    </div>
+                    <div>
+                        <input class="contenedor-p__forms-imput" type="checkbox" name="curso" id="bateria"
+                            value="bateria" />
+                        <label class="contenedor-p__forms-imput" for="bateria">bateria</label>
+                    </div>
+                    <div>
+                        <input class="contenedor-p__forms-imput" type="checkbox" name="curso" id="canto"
+                            value="canto" />
+                        <label class="contenedor-p__forms-imput" for="canto">canto</label>
+                    </div>
+
+                    <div class="contenedor-p__forms-div">
+                        <label class="contenedor-p__forms-imput" for="comentarios">comentarios</label>
+                        <textarea class="contenedor-p__forms-imput" name="comentarios" id="comentarios"></textarea>
+                    </div>
+                    <button class="btn-forms" type="reset">resetear</button>
+                    <button class="btn-forms" type="submit">enviar</button>
+                </form>
+                <span class="contenedor-p__linea"></span>
+                <p class="contenedor-p__parrafo">
+                    Una vez recibida tu pre-inscripción, te contactaremos para completar
+                    la inscripción en nuestra institución.
+                </p>
+            </div>
+
+            <div class="contenedor-p__hijo-dos">
+                <div>
+                    <img src="../multimedia/pre1.jpg.jpg" class="contenedor-p__img" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__row">
+            <div class="footer__colum">
+                <h3>Mapa</h3>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">inicio</a></li>
+                        <li><a href="quienessomos.html">quienes somos</a></li>
+                        <li><a href="academia.html">academia</a></li>
+                        <li><a href="preinscripcion.html">pre-inscripcion</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__colum">
+                <h3>Contactanos</h3>
+                <address>
+                    <ul>
+                        <li>
+                            11-73687376
+                            <span class="iconify" data-icon="clarity:phone-handset-solid" data-inline="false"></span>
+                        </li>
+                        <li>
+                            11-73687376
+                            <span class="iconify" data-icon="akar-icons:whatsapp-fill" data-inline="false"></span>
+                        </li>
+                        <li>
+                            divenire1996@gmail.com
+                            <span class="iconify" data-icon="carbon:email" data-inline="false"></span>
+                        </li>
+                        <li>
+                            Pasteur 975. martinez
+                            <span class="iconify" data-icon="akar-icons:location" data-inline="false"></span>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__colum">
+                <h3>sigamos conectados</h3>
+                <div class="btn-iconos">
+                    <a class="" href="https://www.instagram.com/?hl=es"><span class="iconify"
+                            data-icon="akar-icons:instagram-fill" data-inline="false"></span></a>
+                    <a class="" href="https://es-la.facebook.com/"><span class="iconify" data-icon="bx:bxl-facebook"
+                            data-inline="false"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__end">
+            <p>Copyright © alejandro millan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
