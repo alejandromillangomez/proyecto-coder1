@@ -72,13 +72,11 @@ p {
 }
 
 .btn-forms {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  border-radius: 1em;
-  background-color: #F06363;
-  padding: .3em;
-  font-weight: .3em;
   color: #fff;
+  background-color: #F91C1C;
+  text-align: center;
+  border-radius: 10px;
+  padding: .1em;
 }
 
 .btn-main {
@@ -607,6 +605,14 @@ p {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     max-width: 1400px;
+  }
+  .card:hover {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   }
 }
 
