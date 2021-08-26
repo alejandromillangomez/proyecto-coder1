@@ -31,7 +31,7 @@ p {
 /*hover links*/
 /*botones*/
 .btn-pagina a, .btn-main a {
-  padding: .5em;
+  padding: .6em;
   color: #fff;
   background-color: #F91C1C;
   text-decoration: none;
@@ -76,7 +76,10 @@ p {
   background-color: #F91C1C;
   text-align: center;
   border-radius: 10px;
-  padding: .1em;
+  padding: .2em;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-main {
@@ -98,18 +101,18 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-  background-image: linear-gradient(#046582, #dbe4f1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+  background-image: linear-gradient(#455154, #0c0c0c);
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   color: #fff;
-  -webkit-box-shadow: 0.2em 0.2em 0.2em 0.2em #046582;
-          box-shadow: 0.2em 0.2em 0.2em 0.2em #046582;
+  -webkit-box-shadow: 0.2em 0.2em 0.2em 0.2em #455154;
+          box-shadow: 0.2em 0.2em 0.2em 0.2em #455154;
 }
 
 .header .header__logo {
-  color: #F91C1C;
+  color: #fff;
   font-family: 'Monoton', cursive;
   text-decoration: none;
   font-size: 3em;
@@ -150,11 +153,11 @@ p {
 
 /*footer*/
 .footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#7eaae5));
-  background-image: linear-gradient(#046582, #7eaae5);
-  padding: 70px 0;
-  -webkit-box-shadow: 0.2em 0.2em 0.2em 1em #046582;
-          box-shadow: 0.2em 0.2em 0.2em 1em #046582;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4d5659), to(#0c0c0c));
+  background-image: linear-gradient(#4d5659, #0c0c0c);
+  padding: 1em 0;
+  -webkit-box-shadow: 0.2em 0.2em 0.2em 1em #455154;
+          box-shadow: 0.2em 0.2em 0.2em 1em #455154;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +169,7 @@ p {
 
 .footer .footer__end {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2em;
   color: #fff;
 }
 
@@ -292,8 +295,8 @@ p {
   margin-top: 9em;
   width: 100%;
   height: 670px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-  background-image: linear-gradient(#046582, #dbe4f1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+  background-image: linear-gradient(#455154, #0c0c0c);
   border-radius: 5px;
 }
 
@@ -336,8 +339,10 @@ p {
 }
 
 .contenedor-i .card-contenido {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-  background-image: linear-gradient(#046582, #dbe4f1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+  background-image: linear-gradient(#455154, #0c0c0c);
+  color: #fff;
+  border: none;
 }
 
 @media all and (min-width: 475px) {
@@ -388,8 +393,9 @@ p {
     margin-left: auto;
   }
   .contenedor-i .card-contenido {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-    background-image: linear-gradient(#046582, #dbe4f1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+    background-image: linear-gradient(#455154, #0c0c0c);
+    color: #fff;
   }
   .contenedor-i .img-fluid {
     -o-object-fit: cover;
@@ -464,8 +470,8 @@ p {
             flex-direction: row;
     margin-top: 9em;
     max-height: 400px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-    background-image: linear-gradient(#046582, #dbe4f1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+    background-image: linear-gradient(#455154, #0c0c0c);
     border-radius: 5px;
   }
 }
@@ -485,20 +491,12 @@ p {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  padding: 2em;
 }
 
 .contenedor-quienes .contenedor-quienes__items {
   width: 100%;
-  padding: 2em;
-}
-
-.contenedor-quienes .contenedor-quienes__items .btn-main {
-  padding: 1em;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 1em;
 }
 
 .contenedor-quienes .contenedor-quienes__items .contenedor-quienes__img {
@@ -508,21 +506,26 @@ p {
   max-height: 300px;
 }
 
-@media all and (min-width: 900px) {
+.contenedor-quienes .contenedor-quienes__items .contenedor-quienes__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-quienes .contenedor-quienes__items .contenedor-quienes__btn .btn-main {
+  padding: .6em;
+}
+
+@media all and (min-width: 979px) {
   .contenedor-quienes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    max-width: 1400px;
+    max-width: 1000px;
   }
   .contenedor-quienes .contenedor-quienes__items {
-    max-width: 700px;
-    padding: 2em;
-  }
-  .contenedor-quienes .contenedor-quienes__items .btn-contenedor {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,15 +533,25 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 3em;
   }
-  .contenedor-quienes .contenedor-quienes__items .btn-contenedor .btn-main {
-    text-align: center;
+  .contenedor-quienes .contenedor-quienes__items .contenedor-quienes__element {
+    min-width: 500px;
+    max-height: 240px;
   }
-  .contenedor-quienes .contenedor-quienes__items .contenedor-quienes__img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-width: 350px;
-    max-height: 350px;
+  .contenedor-quienes .contenedor-quienes__items .contenedor-quienes__element .contenedor-quienes__img {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-quienes .contenedor-quienes__items .contenedor-quienes__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 2.2em;
   }
 }
 
@@ -579,13 +592,13 @@ p {
 }
 
 .card .card__contenido {
-  padding: 1em;
+  padding: 2em;
   gap: 1em;
   text-align: center;
 }
 
 .card .card__contenido p {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 @media all and (min-width: 560px) {
@@ -648,6 +661,7 @@ p {
   gap: 1em;
   width: 100%;
   max-width: 470px;
+  line-height: 1.8;
 }
 
 .contenedor-p__hijo .contenedor-p__forms-div {
@@ -660,8 +674,12 @@ p {
           flex-direction: column;
 }
 
+.contenedor-p__hijo .contenedor-p__btn {
+  padding-top: .7em;
+}
+
 .contenedor-p__hijo .contenedor-p__linea {
-  background: #F06363;
+  background: #4d5659;
   height: 5px;
 }
 
@@ -682,8 +700,8 @@ p {
 .contenedor-p .contenedor-p__hijo-dos .contenedor-p__img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 600px;
-  min-height: 600px;
+  max-height: 800px;
+  min-height: 700px;
   width: 100%;
 }
 
@@ -746,6 +764,10 @@ p {
   max-width: 810px;
 }
 
+.contenedor-c__hijo .contenedor-c__btn {
+  padding-top: .7em;
+}
+
 @media all and (min-width: 500px) {
   .contenedor-c {
     display: -webkit-box;
@@ -774,8 +796,8 @@ p {
 
 /*error*/
 .body-error {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#046582), to(#dbe4f1));
-  background-image: linear-gradient(#046582, #dbe4f1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#455154), to(#0c0c0c));
+  background-image: linear-gradient(#455154, #0c0c0c);
   width: 100%;
   height: 100vh;
   display: -webkit-box;
